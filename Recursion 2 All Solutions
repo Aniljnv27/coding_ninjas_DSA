@@ -1,0 +1,44 @@
+Remove X
+
+public class solution {
+
+	// Return the changed string
+	public static String removeX(String input){
+		if (input.length() == 0) {
+			return input;
+		}
+
+		String res = removeX(input.substring(1));
+		if (input.charAt(0) == 'x') {
+			// System.out.println("return x = " + input.substring(1));
+			return res;
+		} else {
+			// System.out.println("return without x = " + input.charAt(0) + temp);
+			return input.charAt(0) + res;
+		}
+    }
+}
+
+Remove Duplicates Recursively
+
+public class Solution {
+
+	public static String removeConsecutiveDuplicates(String s) {
+		String result = "";
+		char ch = s.charAt(0);
+		result += ch;
+		for(int i = 1;i < s.length();i++) {
+			if(s.charAt(i) == ch);
+			else 
+				result += s.charAt(i);
+			ch = s.charAt(i);
+		}
+		return result;
+	
+
+	}
+
+}
+
+Merge Sort - Problem Statement
+
